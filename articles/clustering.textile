@@ -1,0 +1,21 @@
+---
+title: "Ruby AMQP gem: Clustering"
+layout: article
+permalink: "/clustering/"
+---
+
+h1. Clustering
+
+h2. About this guide
+
+This guide covers clustered AMQP broker setups, with RabbitMQ as example.
+
+h2. Covered versions
+
+This guide covers "Ruby amqp gem":http://github.com/ruby-amqp/amqp v0.9.0 and later.
+
+TBD
+
+h2. Clustering
+
+TBD
