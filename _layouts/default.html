@@ -1,4 +1,10 @@
+
 <!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <title>Ruby User Group Munich</title>
@@ -10,27 +16,20 @@
     <script src="assets/js/modernizr-2.6.0.min.js"></script>
     <script>
       window.onload = function(){
-        $(".span9.talk").click(function(data) {
+        $(".talk").click(function(data) {
           var sd = $(this).find(".shortdesc");
           sd.toggle("slow");
         });
-        $(".span9 .talk").click(function(data) {
 
+        $(".speaker").click(function(data){
+          var sd = $(this).find(".shortdesc");
+          var person_id = $(sd).attr("person");
+          if (person_id != "" && person_id != null){
+            sd.html($("#" + person_id).html());
+            sd.toggle("slow");
+          }
         });
       }
-    </script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-12314275-8']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-      //]]>
     </script>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="140">
@@ -93,7 +92,7 @@
                 </p>
                 <br>
                 <div class="button">
-                  <a href="#" class="button-red"><img alt="" src="assets/img/icons/cog.png"></a><a href="#next_meetup" class="button-black">The next meetup</a>
+                  <a href="#" class="button-red"><img class="intro-icon" alt="" src="assets/img/icons/time-white.png"></a><a href="#next_meetup" class="button-black">The next meetup</a>
                 </div>
               </div>
             </div>
@@ -113,7 +112,7 @@
                 </p>
                 <br>
                 <div class="button">
-                  <a href="#" class="button-red"><img alt="" src="assets/img/icons/mail-white.png"></a><a href="#past_talks" class="button-black">Past Talks</a>
+                  <a href="#" class="button-red"><img  class="intro-icon" alt="" src="assets/img/icons/past.png"></a><a href="#past_talks" class="button-black">Past Talks</a>
                 </div>
               </div>
             </div>
@@ -140,14 +139,20 @@
           </div>
           <div class="span4">
             <div class="circle-white">
-              <span class="icon" style="background-image: url('assets/img/icons/settings.png');"></span>
+              <div class="icon">
+                <img class="icon-grey" src="assets/img/icons/idea-grey.png"/>
+                <img class="icon-red" src="assets/img/icons/idea-red.png"/>
+              </div>
               <h3 class="dotted-black">Learning</h3>
               <p>Get to know new technologies,<br>techniques and<br>new people</p>
             </div>
           </div>
           <div class="span4">
             <div class="circle-white">
-              <span class="icon" style="background-image: url('assets/img/icons/zoom.png');"></span>
+              <div class="icon">
+                <img class="icon-grey" src="assets/img/icons/fun-grey.png"/>
+                <img class="icon-red" src="assets/img/icons/fun-red.png"/>
+              </div>
               <h3 class="dotted-black">Fun</h3>
               <p>Programming is fun<br>and learning is fun and a few drinks <br>afterwards is fun</p>
             </div>
@@ -166,7 +171,7 @@
         </div>
         <div class="row">
           <div class="span2 hidden-phone">
-            <img src="assets/img/clock.png" alt="">
+            <img class="section-icon" src="assets/img/icons/time.png" alt="">
           </div>
           <div class="span10">
             <div class="section-header">
@@ -176,8 +181,11 @@
             <p>We are again fully packed again with interesting talks and great speakers
             </p>
             <div class="span12 talk-entry">
-                <div class="span3 speaker">Maikel Lammers</div>
-                <div class="span9 talk foo">
+                <div class="span3 speaker">
+                  <span>Maikel Lammers</span>
+                  <div class="shortdesc grey" person="maikel_lammers"></div>
+                </div>
+                <div class="span9 talk">
                   <span>Introduction to the data, context, interaction architecture (DCI)</span>
                   <div class="shortdesc grey">
                     Object oriented programming does well capturing state and state changes of classes, <br>
@@ -186,13 +194,19 @@
                 </div>
             </div>
             <div class="span12 talk-entry">
-                <div class="span3 speaker">Daniel Sudman</div>
+                <div class="span3 speaker">
+                  <span>Daniel Sudman</span>
+                  <div class="shortdesc grey" person="daniel_sudman"></div>
+                </div>
                 <div class="span9 talk">
                   <span>Experteers Webcrawler</span>
                 </div>
             </div>
             <div class="span12 talk-entry">
-                <div class="span3 speaker">Philipp Fehre</div>
+                <div class="span3 speaker">
+                  <span>Philipp Fehre</span>
+                  <div class="shortdesc grey" person="phillipp_fehre"></div>
+                </div>
                 <div class="span9 talk">
                   <span>Hammering the command line with Thor</span>
                   <div class="shortdesc grey">
@@ -204,7 +218,10 @@
               </div>
             </div>
             <div class="span12 talk-entry">
-                <div class="span3 speaker">Robert Kuzelj</div>
+                <div class="span3 speaker">
+                  <span>Robert Kuzelj</span>
+                  <div class="shortdesc grey" person="robert_kuzelj"></div>
+                </div>
                 <div class="span9 talk">
                   <span>Concurrent & scalable Ruby with Actors (Part I)</span>
                   <div class="shortdesc grey">
@@ -228,33 +245,45 @@
         </div>
         <div class="row">
           <div class="span2 hidden-phone">
-            <img src="assets/img/scisors.png" alt="">
+            <img class="section-icon" src="assets/img/icons/past.png" alt="">
           </div>
           <div class="span10">
-            <p><strong class="white">Find the full list of all our speakers, their talks, a short description and a short bio (hover or click on their name or the presentation title). </strong></p>
+            <p><strong class="white">Find the full list of all our speakers, their talks, a short description and a short bio (click on their name or the presentation title). </strong></p>
             <br>
             <div class="span9 meeting dotted-white-up">
               <div class="span9 meeting-header">November, 14th 2012</div>
               <div class="span12 talk-entry">
-                  <div class="span3 speaker">Nikolay Sturm</div>
+                  <div class="span3 speaker">
+                    <span>Nikolay Sturm</span>
+                    <div class="shortdesc" person="nikolay_sturm"></div>
+                  </div>
                   <div class="span9 talk">
                     <span>Introduction to the Hexagonal Architecture</span>
                   </div>
               </div>
               <div class="span12 talk-entry">
-                  <div class="span3 speaker">Peter Schrammel</div>
+                  <div class="span3 speaker">
+                    <span>Peter Schrammel</span>
+                    <div class="shortdesc" person="peter_schrammel"></div>
+                  </div>
                   <div class="span9 talk">
                     <span>Rails performance and the Indentity Mapper</span>
                   </div>
               </div>
               <div class="span12 talk-entry">
-                  <div class="span3 speaker">Oleksandr Petrov</div>
+                  <div class="span3 speaker">
+                    <span>Oleksandr Petrov</span>
+                    <div class="shortdesc" person="oleksandr_petrov"></div>
+                  </div>
                   <div class="span9 talk">
                     <span>Introduction to Clojure</span>
                   </div>
               </div>
               <div class="span12 talk-entry">
-                  <div class="span3 speaker">Sara Regan</div>
+                  <div class="span3 speaker">
+                    <span>Sara Regan</span>
+                    <div class="shortdesc" person="sara_regan"></div>
+                  </div>
                   <div class="span9 talk">
                     <span>Experience report on the Rails Girls Munich event</span>
                     <div class="shortdesc">
@@ -268,7 +297,10 @@
             <div class="span9 meeting dotted-white-up">
               <div class="span9 meeting-header">October, 10th 2012</div>
               <div class="span12 talk-entry">
-                <div class="span3 speaker">Peter Schrammel</div>
+                <div class="span3 speaker">
+                  <span>Peter Schrammel</span>
+                  <div class="shortdesc" person="peter_schrammel"></div>
+                </div>
                 <div class="span9 talk">
                   <span>Pains of growing</span>
                   <div class="shortdesc">A short and very opinionated resume of growing <br>
@@ -279,7 +311,10 @@
                   </div>
               </div>
               <div class="span12 talk-entry">
-                  <div class="span3 speaker">Robert Kuzelj</div>
+                  <div class="span3 speaker">
+                    <span>Robert Kuzelj</span>
+                    <div class="shortdesc" person="robert_kuzelj"></div>
+                  </div>
                   <div class="span9 talk">
                     <span>Who is afraid of the whitespaces?</span>
                     <div class="shortdesc">
@@ -298,7 +333,10 @@
               <div class="span9 meeting dotted-white-up">
                 <div class="span9 meeting-header">September, 12th 2012</div>
                 <div class="span12 talk-entry">
-                  <div class="span3 speaker">Nikolay Sturm</div>
+                  <div class="span3 speaker">
+                    <span>Nikolay Sturm</span>
+                    <div class="shortdesc" person="nikolay_sturm"></div>
+                  </div>
                   <div class="span9 talk">
                     <span>Cucumber and RSpec for acceptance testing</span>
                     <div class="shortdesc">
@@ -310,7 +348,10 @@
                   </div>
                 </div>
                 <div class="span12 talk-entry">
-                  <div class="span3 speaker">Robert Kuzelj</div>
+                  <div class="span3 speaker">
+                    <span>Robert Kuzelj</span>
+                    <div class="shortdesc" person="robert_kuzelj"></div>
+                  </div>
                   <div class="span9 talk">
                     <span>Introduction to Sinatra
                     <div class="shortdesc">
@@ -319,7 +360,10 @@
                   </div>
                 </div>
                 <div class="span12 talk-entry">
-                  <div class="span3 speaker">Oleksandr Petrov</div>
+                  <div class="span3 speaker">
+                    <span>Oleksandr Petrov</span>
+                    <div class="shortdesc" person="oleksandr_petrov"></div>
+                  </div>
                   <div class="span9 talk">
                     <span>Metrics the second attemp</span>
                     <div class="shortdesc">
@@ -334,14 +378,20 @@
               <div class="span9 meeting dotted-white-up">
                 <div class="span9 meeting-header">August, 8th 2012</div>
                 <div class="span12 talk-entry">
-                  <div class="span3 speaker">Christoph Engelhardt</div>
+                  <div class="span3 speaker">
+                    <span>Christoph Engelhardt</span>
+                    <div class="shortdesc" person="christoph_engelhardt"></div>
+                  </div>
                   <div class="span9 talk">
                     <span>Introduction to Twilio</span>
                     <div class="shortdesc">Talk about twilio (http://twilio.com). Twilio brings voice and messaging to your web and mobile applications.</div>
                   </div>
                 </div>
                 <div class="span12 talk-entry">
-                  <div class="span3 speaker">Henning Koch</div>
+                  <div class="span3 speaker">
+                    <span>Henning Koch</span>
+                    <div class="shortdesc" person="henning_koch"></div>
+                  </div>
                   <div class="span9 talk">
                     <span>Solving bizarre authorization requirements</span>
                     <div class="shortdesc">
@@ -362,15 +412,42 @@
               </div>
             </div>
             <div class="speakers">
-              <div id="peter_schrammel">Husband, father and teamlead. Been looking for ruby for 10 years, using it since 2005 and happy. Long military and leadership background</div>
-              <div id="robert_kuzelj">Robert Kuzelj is a payment expert, entrepreneur and geek. He has been into software development for the last 20 years as coach, consultant and developer. From 2004 - 2010 he was CEO of PAY.ON a Munich based provider of payment gateways. At the moment Robert prepares a new venture.</div>
-              <div id="nikolay_sturm">After a first career in systems administration, I switched to rails development on www.helpster.de last summer. For a decade now, I am active in the open-source community, first as committer to the OpenBSD project and later building one of the first testing tools for puppet, cucumber-puppet.
+              <div id="peter_schrammel">
+                Husband, father and teamlead. <br>
+                Been looking for ruby for 10 years,<br>
+                using it since 2005 and happy. <br>
+                Long military and leadership background
+              </div>
+              <div id="robert_kuzelj">
+                I am a payment expert, entrepreneur <br>
+                and geek. I have been into software <br>
+                development for the last 20 years as<br>
+                coach, consultant and developer.<br>
+                From 2004 - 2010 I was CEO of PAY.ON a <br>
+                Munich based provider of payment gateways.<br>
+                At the moment I prepare a new venture.
+              </div>
+              <div id="nikolay_sturm">
+                After a first career in systems <br>
+                administration, I switched to rails<br>
+                development on www.helpster.de <br>
+                last summer. For a decade now, I am active<br>
+                in the open-source community, first as<br>
+                committer to the OpenBSD project and later<br>
+                building one of the first testing tools <br>
+                for puppet, cucumber-puppet.
               </div>
               <div id="maikel_lammers">
-                I'm a Ruby developer at Experteer. I'm still relatively new to this (I started working in development roughly two years ago) and am trying to learn as much as possible.
+                I'm a Ruby developer at Experteer.<br>
+                I'm still relatively new to this <br>
+                (I started working in development <br>
+                roughly two years ago) and am trying<br>
+                to learn as much as possible.
               </div>
               <div id="phillipp_fehre">
-                Phil is your local and friendly ruby and javascript coder, working for his company Cospired.
+                Phil is your local and friendly ruby<br>
+                and javascript coder, working for <br>
+                his company Cospired.
               </div>
             </div>
           </div>
@@ -389,7 +466,7 @@
         </div>
         <div class="row">
           <div class="span2 hidden-phone">
-            <img src="assets/img/about.png" alt="">
+            <img class="section-icon" src="assets/img/icons/contact.png" alt="">
           </div>
           <div class="span3">
             <p><strong>Rubyshift - the Ruby user group in Munich</strong></p>
@@ -422,10 +499,10 @@
           <div class="span3">
             <h3>Ruby User Group</h3>
             <p>Munich</p>
-            <br />
+            <br>
             <p><img src="assets/img/icons/mail-black.png" alt=""> <a href="mailto:robert@robkuz.com" style="text-decoration: underline;">robert@robkuz.com</span></p>
             <p><img src="assets/img/icons/mail-black.png" alt=""> <a href="mailto:alexp@coffeenco.de" style="text-decoration: underline;">alexp@coffeenco.de</span></p>
-            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -433,7 +510,7 @@
     <!-- BEGIN Footer -->
     <div id="footer">
       <div class="container">
-        <p>All Rights Reserved 2011-2013 <strong>munich.rubyshift.org</strong></p>
+        <p>ALL RIGHT RESERVED 2011-2012 <strong>munich.rubyshift.org</strong></p>
       </div>
     </div>
     <!-- END Footer -->
