@@ -32,7 +32,7 @@ function createMeetups(meetups) {
 function createMeetup(meetup) {
   	return  "<div class='span9 meeting dotted-white-up'>\n" +
           	"   <div class='span9 meeting-header'>" + meetup.date + "</div>\n" +
-          	createTalks(meetup.talks) + 
+          	createTalks(meetup.talks, "white") + 
           	"</div>\n";
 };
 
