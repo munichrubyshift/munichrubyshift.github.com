@@ -10,5 +10,6 @@ window.speakers = {
   "robert_curth":     "Programmer at Gutefrage.net. <br>Ruby newbie. Caffeine addicted.<br>",
   "matthias_marshall":"Agile Team Lead at gutefrage.net. <br>Writer. Learner. Passionate about <br>Continuous Delivery, Infrastructure Automation, <br>and all things Devops. <br>",
   "henning_koch":     "Rubyist by day, romantic at night. <br>On Rails since 2005. CTO and co-founder of makandra.<br>",
-  "leif_gensert":     "Full-time web developer and part time geek. After 6 years of Java I switched to Ruby. Loving it ever since."
+  "leif_gensert":     "Full-time web developer and part time geek. After 6 years of Java I switched to Ruby. Loving it ever since.",
+  "jan_stepien":     "Your fellow geek born and raised in the arguably picturesque city of<br>Warsaw. When in front of the keyboard he’s most probably juggling with<br>bits of Ruby, C, Clojure and Haskell. When offline, he can be found<br>outdoors; either preparing for the next marathon or wandering with a way<br>too big backpack somewhere in the Alpine or Carpathian wilderness."
 };

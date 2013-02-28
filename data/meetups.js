@@ -1,6 +1,27 @@
 window.meetups = 
 [
   {
+    "date": "2013-03-13",
+    "talks": 
+    [
+      {
+        "speaker": "carola_boettcher",
+        "title": "The Raspberry Pi - Take a byte",
+        "desc": "One year ago the first Raspberry Pi was shipped.<br>Its a sucess story. We'll discover why,<br>what it is and what cool stuff you can do with it!"
+      },
+      {
+        "speaker": "jan_stepien",
+        "title": "Rubinius — seemingly the same but completely different",
+        "desc": "In this talk I'll compare Rubinius with MRI, the canonical Ruby<br>implementation. I'll present things which make it different and discuss<br>how technical decisions made by the Rubinius team affect the performance<br>of the whole virtual machine."
+      },
+      {
+        "speaker": "konrad_merz",
+        "title": "The all mighty Rake",
+        "desc": " An introduction for ruby beginner and<br>tips and tricks for advanced Rakefiles."
+      },
+    ]
+  },
+  {
     "date": "2013-02-16",
     "talks": 
     [
