@@ -1,6 +1,27 @@
 window.meetups = 
 [
   {
+    "date": "2013-04-10",
+    "talks": 
+    [
+      {
+        "speaker": "alexander_reelsen",
+        "title": "Introduction into elasticsearch - Integration with Ruby",
+        "desc": "Search is a rather complex topic, which elasticsearch as an open source<br>search solution tries to simplify. However, solutions<br>are useless without integrations, so we are<br>going to checkout one of the existing ruby integrations."
+      },
+      {
+        "speaker": "peter_schrammel",
+        "title": "Introduction to Goliath",
+        "desc": "Goliath a lightweight eventmachine based web framework.<br>I'll show you the features, the caveats and give you some hints that<br>could help you with your next project."
+      },
+      {
+        "speaker": "oleksandr_petrov",
+        "title": "Introduction to Cassandra",
+        "desc": "Cassandra a fault-tolerant, distributed database, allowing<br>you to scale linearly without compromising performance or availability."
+      },
+    ]
+  },
+  {
     "date": "2013-03-13",
     "talks": 
     [
