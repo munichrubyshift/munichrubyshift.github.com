@@ -1,6 +1,27 @@
 window.meetups = 
 [
   {
+    "date": "2013-05-08",
+    "talks": 
+    [
+      {
+        "speaker": "henning_koch",
+        "title": "Writing hard migrations in Rails",
+        "desc": "Rails migrations lets you change your database schema with simple<br>commands like `create_table` or `add_column`. Unfortunately these<br>commands are not expressive enough to handle cases where existing data<br>must be processed and moved around tables. This talk shows different<br>techniques you can use to describe nontrivial migrations in Rails."
+      },
+      {
+        "speaker": "phillipp_fehre",
+        "title": "Lighting fast rails with zeus",
+        "desc": "Starting up rails is crazy slow! Sometimes I drag to use some tools<br>just because they startup rails and it takes like 30 sec. <br>It's bad, and it breaks flow. Zeus is here to change this by giving you a <br>fast way to run your rails environment."
+      },
+      {
+        "speaker": "leif_gensert",
+        "title": "Metrics - What are they good for?",
+        "desc": "It's risky to use metrics in your projects. But the risks are often <br>used as an excuse not to use metrics. So what's a good way <br>to use metrics? Hopefully this talks will shed a light on this question."
+      },
+    ]
+  },
+  {
     "date": "2013-04-10",
     "talks": 
     [
