@@ -1,6 +1,27 @@
 window.meetups = 
 [
   {
+    "date": "2013-06-12",
+    "talks": 
+    [
+      {
+        "speaker": "anna_bulenkova",
+        "title": "Refactoring using RubyMine (an indepth view behind the curtain)",
+        "desc": "Nobody likes when their code smells. In order to prevent it,<br> a bunch of special tools and approaches have been designed.<br> Efficient coding tools, refactorings, code metrics, code analysis,<br> code testing and debugging are all crucial for creating quality,<br> maintainable code. This talk is meant to show how to<br> efficiently detect code problems, eliminate them <br>using refactoring, and validate everything after changes."
+      },
+      {
+        "speaker": "patrick_mulder",
+        "title": "The Client-Side on Ruby ",
+        "desc": "What options does Ruby offer to serve client-side web applications?<br> Using Backbone.JS I will show the elements of a client-side<br> web application (events, rendering, data transport),<br> how Rack and Sinatra can be used to serve directories of JavaScript files.<br> Lastly I show the relationship between Rack, Sprockets<br> and the Asset Pipeline and RequireJS-Rails."
+      },
+      {
+        "speaker": "jan_stepien",
+        "title": "Topaz is Ruby in Python",
+        "desc": "Topaz is a high performance implementation of the Ruby <br>programming language, written in Python on top of RPython.<br> Let's see a) what does it actually mean,<br> b) how does it work, and<br> c) how you can make it better."
+      },
+    ]
+  },
+  {
     "date": "2013-05-08",
     "talks": 
     [
