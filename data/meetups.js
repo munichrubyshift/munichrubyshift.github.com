@@ -1,10 +1,29 @@
-window.meetups =
+window.meetups = 
 [
   {
+    "date": "2013-09-11",
+    "talks": 
+    [
+      {
+        "speaker": "anna_bulenkova",
+        "title": "How to look like a model: MongoDB for Rails projects",
+        "desc": "This talk covers main concepts of document-oriented data model, <br>pros and contras considering MongoDB and how to use <br>this database together with Ruby-on-Rails"
+      },
+      {
+        "speaker": "lucas_dohmen",
+        "title": "Introduction to ArangoDB",
+        "desc": "ArangoDB is an open source NoSQL database which is not <br>narrow-mindedly focused on horizontal scalability.<br>Instead, ArangoDB aims to offer developers<br>great flexibility and ease-of-use. The database<br>is suitable for use cases which are difficult<br>to implement with most traditional relational databases<br>and also many of the other NoSQL databases."
+      },
+      {
+        "speaker": "phillipp_fehre",
+        "title": "PUT Knowledge BUCKET Brain KEY Riak",
+        "desc": "A short introduction to Riak with real world usage, covering some basics on the Riak structure, querying and a special usecase, replacing S3."
+      },
+    ]
   },
   {
     "date": "2013-06-12",
-    "talks":
+    "talks": 
     [
       {
         "speaker": "anna_bulenkova",
@@ -25,7 +44,7 @@ window.meetups =
   },
   {
     "date": "2013-05-08",
-    "talks":
+    "talks": 
     [
       {
         "speaker": "henning_koch",
@@ -46,7 +65,7 @@ window.meetups =
   },
   {
     "date": "2013-04-10",
-    "talks":
+    "talks": 
     [
       {
         "speaker": "alexander_reelsen",
@@ -67,7 +86,7 @@ window.meetups =
   },
   {
     "date": "2013-03-13",
-    "talks":
+    "talks": 
     [
       {
         "speaker": "carola_boettcher",
@@ -88,7 +107,7 @@ window.meetups =
   },
   {
     "date": "2013-02-16",
-    "talks":
+    "talks": 
     [
       {
         "speaker": "jason_franklin",
@@ -109,7 +128,7 @@ window.meetups =
   },
   {
     "date": "2013-01-16",
-    "talks":
+    "talks": 
     [
       {
         "speaker": "peter_schrammel",
@@ -140,7 +159,7 @@ window.meetups =
   },
   {
     "date": "2012-12-12",
-    "talks":
+    "talks": 
     [
       {
         "speaker": "maikel_lammers",
@@ -166,7 +185,7 @@ window.meetups =
   },
   {
     "date": "2012-11-14",
-    "talks":
+    "talks": 
     [
       {
         "speaker": "nikolay_sturm",
@@ -192,7 +211,7 @@ window.meetups =
   },
   {
     "date": "2012-10-10",
-    "talks":
+    "talks": 
     [
       {
         "speaker": "peter_schrammel",
@@ -218,7 +237,7 @@ window.meetups =
   },
   {
     "date": "2012-09-10",
-    "talks":
+    "talks": 
     [
       {
         "speaker": "nikolay_sturm",
@@ -239,7 +258,7 @@ window.meetups =
   },
   {
     "date": "2012-08-08",
-    "talks":
+    "talks": 
     [
       {
         "speaker": "christoph_engelhardt",
